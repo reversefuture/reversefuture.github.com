@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>光志</title>
+  <meta name="author" content="lightzone">
+  
+  <meta name="description" content="lightzone&#39;s blog | html | css | javascript">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="光志"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">光志</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <div class="page-header">
+  <h1>天堂不一定在远方，但地域一定在身后</h1>
+</div>
+
+<div class="row page">
+
+	
+	<div class="col-md-9">
+	
+
+		<div class="slogan">
+      <i class="fa fa-heart"></i>
+      Yet another bootstrap theme.
+</div>    
+		<div id="top_search"></div>
+		<div class="mypage">
+		
+		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-16 </div>
+			<div class="article-title"><a href="/2016/01/16/css-float属性详解/" >css  float属性详解</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<hr>
+<h2 id="u5B9A_u4E49_u548C_u7528_u6CD5"><a href="#u5B9A_u4E49_u548C_u7528_u6CD5" class="headerlink" title="定义和用法"></a>定义和用法</h2><blockquote>
+<p>float 属性定义元素在哪个方向浮动。以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素。<br>如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄。<br>注释：假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">left</td>
+<td style="text-align:left">元素向左浮动</td>
+</tr>
+<tr>
+<td style="text-align:left">right</td>
+<td style="text-align:left">元素向右浮动</td>
+</tr>
+<tr>
+<td style="text-align:left">none</td>
+<td style="text-align:left">默认值。元素不浮动，并会显示在其在文本中出现的位置</td>
+</tr>
+<tr>
+<td style="text-align:left">inherit</td>
+<td style="text-align:left">规定应该从父元素继承 float 属性的值</td>
+</tr>
+</tbody>
+</table>
+<h2 id="u4E0B_u9762_u4E3E_u51E0_u4E2A_u4F8B_u5B50_u6765_u770B_u770Bfloat_u6709_u54EA_u4E9B_u5999_u7528"><a href="#u4E0B_u9762_u4E3E_u51E0_u4E2A_u4F8B_u5B50_u6765_u770B_u770Bfloat_u6709_u54EA_u4E9B_u5999_u7528" class="headerlink" title="下面举几个例子来看看float有哪些妙用"></a>下面举几个例子来看看float有哪些妙用</h2><h3 id="u5B9E_u4F8B1"><a href="#u5B9E_u4F8B1" class="headerlink" title="实例1"></a>实例1</h3><p><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11601.jpg" alt="11601"></p>
+<p>css代码</p>
+<pre><code>.wrap{
+    width: 40%;
+    margin:0 auto;
+    background: #eee;
+}
+.div1{
+width: 200px;
+height: 100px;
+border:1px solid red;
+}
+.div2{
+    width:100px;
+    height: 80px;
+    border:1px solid green;
+}
+.div3{
+    width:80px;
+    height: 60px;
+    border:1px solid blue;
+}
+</code></pre><p>这是按照正常文档流来输出的。<br>下面我们改一下div1的样式<br>css代码</p>
+<pre><code>.div1{
+width: 200px;
+height: 100px;
+float:left;
+border:1px solid red;
+}
+</code></pre><p>再来看下效果<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11602.jpg" alt="1602"></p>
+<p>div2由于受到div1的浮动影响，div2填充了div1遗留下来的空间，发生重叠，div2在上面。div2的文本则被div1挡住，围绕在div1的周围。</p>
+<p>这是因为浮动是不彻底的脱离文档流，当某个元素使用float时，其他盒子会无视这个元素，但其他盒子内的文本依然会为这个元素让出位置，环绕在周围。而对于使用绝对布局脱离文档流的元素，其他盒子与其他盒子内的文本都会无视它。</p>
+<p>可以通过给受影响的元素设置clear属性来清楚浮动，值可以是left，right，both。</p>
+<p>再来看一个例子</p>
+<h3 id="u5B9E_u4F8B2"><a href="#u5B9E_u4F8B2" class="headerlink" title="实例2"></a>实例2</h3><p>css代码</p>
+<pre><code>.wrap{
+width: 40%;
+margin:0 auto;
+background: #eee;
+}
+.div1{
+width: 200px;
+height: 100px;
+float:left;
+border:1px solid red;
+}
+.div2{
+    width:100px;
+    height: 80px;
+    float:left;
+    border:1px solid green;
+}
+.div3{
+    width:80px;
+    height: 60px;
+    float:left;
+    border:1px solid blue;
+}
+</code></pre><p>效果：<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/no-overflow.jpg" alt="no-overflow"></p>
+<p>当把3个div都设置为左浮动后，由于没有给wrap设置高度，没有未浮动的内容给它撑开，wrap的高度缩为0。</p>
+<p>可以给wrap设置overflow来清楚浮动影响：<br>css代码</p>
+<pre><code>.wrap{
+width: 40%;
+margin:0 auto;
+background: #eee;
+overflow: hidden;
+_zoom:1;
+}
+</code></pre><p>效果：<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/no-overflow.jpg" alt="overflow-hidden"></p>
+<p>_zoom:1;属性是IE浏览器的专有属性，Firefox等其它浏览器不支持。它可以设置或检索对象的缩放比例。<br>效果：</p>
+<h3 id="u5B9E_u4F8B3"><a href="#u5B9E_u4F8B3" class="headerlink" title="实例3"></a>实例3</h3><p>css代码</p>
+<pre><code>img 
+{
+float:right;
+border:1px dotted black;
+}
+span
+{
+float:left;
+width:2.5em;
+font:400%/80%  bold algerian,courier;
+}
+</code></pre><p>效果：<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/01161.jpg" alt="01161"></p>
+<p>通过给<img>和<span>设置浮动，让它们显示在父元素<p>的左上角和右上角，同时实现文字环绕。</p>
+<h3 id="float_u8FD8_u53EF_u4EE5_u7528_u6765_u5B9E_u73B0_u6A2A_u5411_u4E24_u5217_u5E03_u5C40_uFF0C_u4E09_u5217_u5E03_u5C40_uFF0C_u6C34_u5E73_u83DC_u5355_u7B49_uFF0C_u8FD9_u91CC_u5C31_u4E0D_u5217_u4E3E_u4E86_u3002"><a href="#float_u8FD8_u53EF_u4EE5_u7528_u6765_u5B9E_u73B0_u6A2A_u5411_u4E24_u5217_u5E03_u5C40_uFF0C_u4E09_u5217_u5E03_u5C40_uFF0C_u6C34_u5E73_u83DC_u5355_u7B49_uFF0C_u8FD9_u91CC_u5C31_u4E0D_u5217_u4E3E_u4E86_u3002" class="headerlink" title="float还可以用来实现横向两列布局，三列布局，水平菜单等，这里就不列举了。"></a>float还可以用来实现横向两列布局，三列布局，水平菜单等，这里就不列举了。</h3></span></p>
+	
+	</div>
+  <a type="button" href="/2016/01/16/css-float属性详解/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-13 </div>
+			<div class="article-title"><a href="/2016/01/13/margin负值应用/" >margin负值应用</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="margin_u8D1F_u503C_u5E94_u7528"><a href="#margin_u8D1F_u503C_u5E94_u7528" class="headerlink" title="margin负值应用"></a>margin负值应用</h1><h2 id="u6211_u7406_u89E3_u7684_u6700_u5173_u952E_u7684_u4E00_u70B9_u662F_uFF1A"><a href="#u6211_u7406_u89E3_u7684_u6700_u5173_u952E_u7684_u4E00_u70B9_u662F_uFF1A" class="headerlink" title="我理解的最关键的一点是："></a>我理解的最关键的一点是：</h2><p>在文档流中，只能是后面的流向前面的，即文档流只能向左或向上流动，不能向下或向右移动。<br>第二个元素的基准线是第一个元素的右边界，第三个元素的基准线是第一、二个元素排好后最右边的边界，第四个元素的基准线是第一、二个元素排好后最右边的边界、、、 </p>
+<h2 id="u62FF_u4E00_u4E2A_u5723_u676F_u5E03_u5C40_u6765_u8BF4"><a href="#u62FF_u4E00_u4E2A_u5723_u676F_u5E03_u5C40_u6765_u8BF4" class="headerlink" title="拿一个圣杯布局来说"></a>拿一个圣杯布局来说</h2><p><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11607.jpg" alt="11607"></p>
+<p>html代码<br>    <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">"three_columns"</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"middle"</span>&gt;</span><br><span class="line">   &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"content"</span>&gt;中间主体区块宽度自适应&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"left"</span>&gt;左列定宽<span class="number">200</span>px&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"right"</span>&gt;右侧定宽<span class="number">300</span>px&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"foot"</span>&gt;底部&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p>css代码</p>
+<pre><code>#three_columns{width :800px ; height: 600px;margin:
+10px auto;background: #ddd}
+.middle,.left,.right {
+    height: 300px;
+    font: bolder 20px/300px &apos;微软雅黑&apos;;
+    color: #fff;
+    text-align: center;
+}
+.middle {
+    width: 100%;
+    float: left;
+    background: black;
+}
+.left {
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    background-color: red;
+}
+.right {
+    width: 300px;
+    float: left;
+    margin-left: -300px;
+    background-color: blue;
+}
+.foot{background: #ff0;height: 80px;clear:both;}
+</code></pre><p>首先main在文档流中先输出，宽度为父元素three_columns的宽度，然后输出left，left以main的右边的边界定位，margin-left: -100%;就是让left移动到它的左边的边界和main右边的边界重合。<br>然后轮到right，此时最右边的边界为main的右边，设置right的margin-left: -300px;让right相对于main的右边左移300px。</p>
+<p>那如果把right设为margin-left: -200px;呢？来看看效果<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11608.jpg" alt="11608"></p>
+<p>再来把right设为margin-left: -400px;呢？来看看效果<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11609.jpg" alt="11069"></p>
+<p>可以看出，当right左移的距离没有超过自身宽度时它是随着文档流被挤到了下方。当right左移的距离超过了自身宽度时，它被挤到了上方覆盖了main。</p>
+<h3 id="u6269_u5C55_u9605_u8BFB"><a href="#u6269_u5C55_u9605_u8BFB" class="headerlink" title="扩展阅读"></a>扩展阅读</h3><p><a href="http://www.imooc.com/wenda/detail/254035" target="_blank" rel="external">圣杯、双飞翼布局</a></p>
+<p>详细请看<br><img src="http://www.alixixi.com/web/a/2014031192655.shtml" alt="margin负值使用之八大绝技"></p>
+
+	
+	</div>
+  <a type="button" href="/2016/01/13/margin负值应用/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-01-10 </div>
+			<div class="article-title"><a href="/2016/01/10/翻墙简明教程/" >翻墙简明教程</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>欢迎来到我的博客！这两天一直在捣鼓怎么翻墙，今天终于成功了，急不可耐的就来分享了，我的第一篇博客，有些词不达意的地方还希望大家包容下</p>
+<h2 id="u90A3_u4E48_u6211_u4EEC_u5F00_u59CB_u5427"><a href="#u90A3_u4E48_u6211_u4EEC_u5F00_u59CB_u5427" class="headerlink" title="那么我们开始吧"></a>那么我们开始吧</h2><h3 id="u9996_u5148_u4F60_u9700_u8981_u4E00_u4E2A_u795E_u5668"><a href="#u9996_u5148_u4F60_u9700_u8981_u4E00_u4E2A_u795E_u5668" class="headerlink" title="首先你需要一个神器"></a>首先你需要一个神器</h3><p>可以在我的网盘下载<a href="http://pan.baidu.com/s/1qXxCvww" target="_blank" rel="external">百度云</a>  密码：z46l</p>
+<h3 id="u6309_u7167_u8FD9_u4E2A_u6559_u7A0B_u4E00_u6B65_u4E00_u6B65_u6765_u5C31_u884C_u4E86"><a href="#u6309_u7167_u8FD9_u4E2A_u6559_u7A0B_u4E00_u6B65_u4E00_u6B65_u6765_u5C31_u884C_u4E86" class="headerlink" title="按照这个教程一步一步来就行了"></a>按照这个教程一步一步来就行了</h3><p><a href="http://tieba.baidu.com/p/3102858073" target="_blank" rel="external">葵花宝典</a></p>
+<h2 id="u672C_u6765_u60F3_u81EA_u5DF1_u5199_u7684_uFF0C_u4F46_u6211_u771F_u662F_u61D2_u554A_uFF0C_u4F46_u770B_u5728_u6211_u5171_u4EAB_u94FE_u63A5_u7684_u4EFD_u4E0A_uFF0C_u8FD8_u5E0C_u671B_u5927_u5BB6_u624B_u4E0B_u7559_u60C5_uFF01"><a href="#u672C_u6765_u60F3_u81EA_u5DF1_u5199_u7684_uFF0C_u4F46_u6211_u771F_u662F_u61D2_u554A_uFF0C_u4F46_u770B_u5728_u6211_u5171_u4EAB_u94FE_u63A5_u7684_u4EFD_u4E0A_uFF0C_u8FD8_u5E0C_u671B_u5927_u5BB6_u624B_u4E0B_u7559_u60C5_uFF01" class="headerlink" title="本来想自己写的，但我真是懒啊，但看在我共享链接的份上，还希望大家手下留情！"></a>本来想自己写的，但我真是懒啊，但看在我共享链接的份上，还希望大家手下留情！</h2><h2 id="u4E1C_u897F_u662F_u771F_u7684_u597D_u7528_uFF0C_u9009_u62E9_u8282_u70B9_u7684_u65F6_u5019_u591A_u8BD5_u8BD5_u51E0_u4E2A_uFF0C_u6211_u4E00_u822C_u90FD_u7528_u65E5_u672C_u9999_u6E2F_u7684"><a href="#u4E1C_u897F_u662F_u771F_u7684_u597D_u7528_uFF0C_u9009_u62E9_u8282_u70B9_u7684_u65F6_u5019_u591A_u8BD5_u8BD5_u51E0_u4E2A_uFF0C_u6211_u4E00_u822C_u90FD_u7528_u65E5_u672C_u9999_u6E2F_u7684" class="headerlink" title="东西是真的好用，选择节点的时候多试试几个，我一般都用日本香港的"></a>东西是真的好用，选择节点的时候多试试几个，我一般都用日本香港的</h2>
+	
+	</div>
+  <a type="button" href="/2016/01/10/翻墙简明教程/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+
+		</div>
+
+		<!-- pagination -->
+		<div>
+  		<center>
+		<div class="pagination">
+<ul class="pagination">
+	 
+</ul>
+</div>
+
+  		</center>
+		</div>
+
+		
+		
+	</div> <!-- col-md-9 -->
+
+	
+		<div class="col-md-3">
+	<div id="sidebar">
+	
+			
+  <div id="site_search">
+   <div class="form-group">
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
+   </div>  
+  <div id="local-search-result"></div>
+  </div>
+
+
+		
+			
+		
+			
+
+		
+			
+<div class="widget">
+  <h4>最新文章</h4>
+  <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2016/01/16/css-float属性详解/" ><i class="fa fa-file-o"></i>css  float属性详解...</a>
+      </li>
+    
+      <li>
+        <a href="/2016/01/13/margin负值应用/" ><i class="fa fa-file-o"></i>margin负值应用...</a>
+      </li>
+    
+      <li>
+        <a href="/2016/01/10/翻墙简明教程/" ><i class="fa fa-file-o"></i>翻墙简明教程...</a>
+      </li>
+    
+  </ul>
+</div>
+
+		
+			
+<div class="widget">
+	<h4>链接</h4>
+	<ul class="blogroll list-unstyled">
+	
+		<li><i class="fa fa-github"></i><a href="https://github.com/reversefuture/" title="My Github" target="_blank"]);">Github</a></li>
+	
+		<li><i class="fa fa-weibo"></i><a href="http://weibo.com/zzfuture/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="My Weibo" target="_blank"]);">微博</a></li>
+	
+		<li><i class="fa fa-globe"></i><a href="https://www.zhihu.com/people/lightzone" title="My Zhihu" target="_blank"]);">知乎</a></li>
+	
+		<li><i class="fa fa-globe"></i><a href="http://segmentfault.com/u/lightzone" title="My Segmentfault" target="_blank"]);">SF</a></li>
+	
+	</ul>
+</div>
+
+
+		
+	</div> <!-- sidebar -->
+</div> <!-- col-md-3 -->
+
+	
+	
+</div> <!-- row-fluid -->
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 lightzone
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>

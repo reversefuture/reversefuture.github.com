@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>margin负值应用 | 光志</title>
+  <meta name="author" content="lightzone">
+  
+  <meta name="description" content="lightzone&#39;s blog | html | css | javascript">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="margin负值应用"/>
+  <meta property="og:site_name" content="光志"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">光志</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> margin负值应用</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="margin_u8D1F_u503C_u5E94_u7528"><a href="#margin_u8D1F_u503C_u5E94_u7528" class="headerlink" title="margin负值应用"></a>margin负值应用</h1><h2 id="u6211_u7406_u89E3_u7684_u6700_u5173_u952E_u7684_u4E00_u70B9_u662F_uFF1A"><a href="#u6211_u7406_u89E3_u7684_u6700_u5173_u952E_u7684_u4E00_u70B9_u662F_uFF1A" class="headerlink" title="我理解的最关键的一点是："></a>我理解的最关键的一点是：</h2><p>在文档流中，只能是后面的流向前面的，即文档流只能向左或向上流动，不能向下或向右移动。<br>第二个元素的基准线是第一个元素的右边界，第三个元素的基准线是第一、二个元素排好后最右边的边界，第四个元素的基准线是第一、二个元素排好后最右边的边界、、、 </p>
+<h2 id="u62FF_u4E00_u4E2A_u5723_u676F_u5E03_u5C40_u6765_u8BF4"><a href="#u62FF_u4E00_u4E2A_u5723_u676F_u5E03_u5C40_u6765_u8BF4" class="headerlink" title="拿一个圣杯布局来说"></a>拿一个圣杯布局来说</h2><p><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11607.jpg" alt="11607"></p>
+<p>html代码<br>    <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">"three_columns"</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"middle"</span>&gt;</span><br><span class="line">   &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"content"</span>&gt;中间主体区块宽度自适应&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"left"</span>&gt;左列定宽<span class="number">200</span>px&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"right"</span>&gt;右侧定宽<span class="number">300</span>px&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"foot"</span>&gt;底部&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p>css代码</p>
+<pre><code>#three_columns{width :800px ; height: 600px;margin:
+10px auto;background: #ddd}
+.middle,.left,.right {
+    height: 300px;
+    font: bolder 20px/300px &apos;微软雅黑&apos;;
+    color: #fff;
+    text-align: center;
+}
+.middle {
+    width: 100%;
+    float: left;
+    background: black;
+}
+.left {
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    background-color: red;
+}
+.right {
+    width: 300px;
+    float: left;
+    margin-left: -300px;
+    background-color: blue;
+}
+.foot{background: #ff0;height: 80px;clear:both;}
+</code></pre><p>首先main在文档流中先输出，宽度为父元素three_columns的宽度，然后输出left，left以main的右边的边界定位，margin-left: -100%;就是让left移动到它的左边的边界和main右边的边界重合。<br>然后轮到right，此时最右边的边界为main的右边，设置right的margin-left: -300px;让right相对于main的右边左移300px。</p>
+<p>那如果把right设为margin-left: -200px;呢？来看看效果<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11608.jpg" alt="11608"></p>
+<p>再来把right设为margin-left: -400px;呢？来看看效果<br><img src="http://7xpjf5.com1.z0.glb.clouddn.com/11609.jpg" alt="11069"></p>
+<p>可以看出，当right左移的距离没有超过自身宽度时它是随着文档流被挤到了下方。当right左移的距离超过了自身宽度时，它被挤到了上方覆盖了main。</p>
+<h3 id="u6269_u5C55_u9605_u8BFB"><a href="#u6269_u5C55_u9605_u8BFB" class="headerlink" title="扩展阅读"></a>扩展阅读</h3><p><a href="http://www.imooc.com/wenda/detail/254035" target="_blank" rel="external">圣杯、双飞翼布局</a></p>
+<p>详细请看<br><img src="http://www.alixixi.com/web/a/2014031192655.shtml" alt="margin负值使用之八大绝技"></p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2016/01/16/css-float属性详解/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/01/10/翻墙简明教程/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/01/13/margin负值应用/" data-title="margin负值应用" data-url="http://reversefuture.github.com/2016/01/13/margin负值应用/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-01-13 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'reversefuture' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 lightzone
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>
